@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Dashboard](README.md)
-* [Newrl](newrl.md)
 * [Haqq](Haqq/README.md)
 * [Hypersign](Hypersign/README.md)
 * [Inery](inery/README.md)
@@ -14,6 +13,7 @@
   * [manual\_full](celestia/manual\_full.md)
   * [manual\_install](celestia/manual\_install.md)
   * [manual\_light](celestia/manual\_light.md)
+* [Newrl](newrl.md)
 * [deweb](deweb/README.md)
 * [mande](mande/README.md)
 * [nulink](nulink/README.md)
