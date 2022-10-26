@@ -1,26 +1,27 @@
-<p style="font-size:14px" align="right">
-<a href="https://t.me/BeritaCryptoo" target="_blank">Join Our Telegram BeritaCryptoo <img src="https://user-images.githubusercontent.com/50621007/183283867-56b4d69f-bc6e-4939-b00a-72aa019d1aea.png" width="30"/></a>
-<a href="https://twitter.com/BeritaCryptoo" target="_blank">Follow Twitter BeritaCryptoo <img src="https://user-images.githubusercontent.com/108946833/184274157-08210464-fa03-493d-b01c-2420c67a524f.jpg" width="30"/></a>
-</p>
+# manual\_bridge
 
-<p align="center">
-  <img width="100" height="auto" src="https://user-images.githubusercontent.com/50621007/170463282-576375f8-fa1e-4fce-8350-6312b415b50d.png">
-</p>
+[Join Our Telegram <img src="https://user-images.githubusercontent.com/50621007/183283867-56b4d69f-bc6e-4939-b00a-72aa019d1aea.png" alt="" data-size="line">](https://t.me/BeritaCryptoo) [Follow Our Twitter<img src="https://user-images.githubusercontent.com/108946833/184274157-08210464-fa03-493d-b01c-2420c67a524f.jpg" alt="" data-size="line">](https://twitter.com/BeritaCryptoo)
 
-# Instal simpul Jembatan
+![](https://user-images.githubusercontent.com/50621007/170463282-576375f8-fa1e-4fce-8350-6312b415b50d.png)
+
+## Instal simpul Jembatan
+
 Untuk mengatur simpul jembatan ikuti langkah-langkah di bawah ini
 
-## Perbarui paket
+### Perbarui paket
+
 ```
 sudo apt update && sudo apt upgrade -y
 ```
 
-## Instal dependensi
+### Instal dependensi
+
 ```
 sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential git make ncdu -y
 ```
 
-## Install go
+### Install go
+
 ```
 if ! [ -x "$(command -v go)" ]; then
   ver="1.18.2"
@@ -34,7 +35,8 @@ if ! [ -x "$(command -v go)" ]; then
 fi
 ```
 
-## Instal Celestia Node
+### Instal Celestia Node
+
 ```
 cd $HOME
 rm -rf celestia-node
@@ -43,12 +45,14 @@ cd celestia-node/
 make install
 ```
 
-## Inisialisasi simpul jembatan
+### Inisialisasi simpul jembatan
+
 ```
 celestia bridge init --core.remote tcp://<validator_node_ip>:26657 --core.grpc tcp://<validator_node_ip>:9090
 ```
 
-## Buat layanan jembatan
+### Buat layanan jembatan
+
 ```
 tee /etc/systemd/system/celestia-bridge.service > /dev/null <<EOF
 [Unit]
@@ -66,7 +70,8 @@ WantedBy=multi-user.target
 EOF
 ```
 
-## Daftar dan mulai layanan jembatan
+### Daftar dan mulai layanan jembatan
+
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable celestia-bridge

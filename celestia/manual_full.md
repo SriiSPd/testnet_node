@@ -1,34 +1,36 @@
-<p style="font-size:14px" align="right">
-<a href="https://t.me/BeritaCryptoo" target="_blank">Join Our Telegram BeritaCryptoo <img src="https://user-images.githubusercontent.com/50621007/183283867-56b4d69f-bc6e-4939-b00a-72aa019d1aea.png" width="30"/></a>
-<a href="https://twitter.com/BeritaCryptoo" target="_blank">Follow Twitter BeritaCryptoo <img src="https://user-images.githubusercontent.com/108946833/184274157-08210464-fa03-493d-b01c-2420c67a524f.jpg" width="30"/></a>
-</p>
+# manual\_full
 
-<p align="center">
-  <img width="100" height="auto" src="https://user-images.githubusercontent.com/50621007/170463282-576375f8-fa1e-4fce-8350-6312b415b50d.png">
-</p>
+[Join Our Telegram <img src="https://user-images.githubusercontent.com/50621007/183283867-56b4d69f-bc6e-4939-b00a-72aa019d1aea.png" alt="" data-size="line">](https://t.me/BeritaCryptoo) [Follow Our Twitter<img src="https://user-images.githubusercontent.com/108946833/184274157-08210464-fa03-493d-b01c-2420c67a524f.jpg" alt="" data-size="line">](https://twitter.com/BeritaCryptoo)
 
+![](https://user-images.githubusercontent.com/50621007/170463282-576375f8-fa1e-4fce-8350-6312b415b50d.png)
 
-# Instal node penuh
+## Instal node penuh
+
 Untuk mengatur simpul penuh ikuti langkah-langkah di bawah ini
 
-## Persyaratan perangkat keras
-Persyaratan minimum perangkat keras berikut direkomendasikan untuk menjalankan node penuh:
-- Memory: 8 GB RAM
-- CPU: Quad-Core
-- Disk: 250 GB SSD Storage
-- Bandwidth: 1 Gbps for Download/100 Mbps for Upload
+### Persyaratan perangkat keras
 
-## Perbarui paket
+Persyaratan minimum perangkat keras berikut direkomendasikan untuk menjalankan node penuh:
+
+* Memory: 8 GB RAM
+* CPU: Quad-Core
+* Disk: 250 GB SSD Storage
+* Bandwidth: 1 Gbps for Download/100 Mbps for Upload
+
+### Perbarui paket
+
 ```
 sudo apt update && sudo apt upgrade -y
 ```
 
-## Instal dependensi
+### Instal dependensi
+
 ```
 sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential git make ncdu -y
 ```
 
-## Install go
+### Install go
+
 ```
 if ! [ -x "$(command -v go)" ]; then
   ver="1.18.2"
@@ -42,7 +44,8 @@ if ! [ -x "$(command -v go)" ]; then
 fi
 ```
 
-## Instal Celestia Node
+### Instal Celestia Node
+
 ```
 cd $HOME
 rm -rf celestia-node
@@ -51,12 +54,14 @@ cd celestia-node/
 make install
 ```
 
-## Inisialisasi node penuh
+### Inisialisasi node penuh
+
 ```
 celestia full init --core.remote tcp://<validator_node_ip>:26657 --core.grpc tcp://<validator_node_ip>:9090
 ```
 
-## Buat layanan penuh
+### Buat layanan penuh
+
 ```
 tee /etc/systemd/system/celestia-full.service > /dev/null <<EOF
 [Unit]
@@ -74,14 +79,16 @@ WantedBy=multi-user.target
 EOF
 ```
 
-## Daftar dan mulai layanan penuh
+### Daftar dan mulai layanan penuh
+
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable celestia-full
 sudo systemctl restart celestia-full
 ```
 
-## Periksa log node penuh
+### Periksa log node penuh
+
 ```
 journalctl -u celestia-full -f -o cat
 ```
