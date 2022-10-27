@@ -48,7 +48,7 @@ python3 get-pip.py
 sudo apt install python3.9-venv
 sudo mkdir newrl-venv
 cd newrl-venv
-python3.9 -m venv newrl-venv
+python3.9 -m venv newrl-venv 
 ```
 
 **Aktifasi**
