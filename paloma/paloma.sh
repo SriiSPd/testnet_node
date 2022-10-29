@@ -15,11 +15,11 @@ echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+"
 
 echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+"
 
-echo -e '\e[36mProject =\e[37m' Testnet Paloma
-echo -e '\e[36mCommunity =\e[37m' BeritaCryptoo
-echo -e '\e[36mTelegram Channel =\e[37m' https://t.me/BeritaCryptoo
-echo -e '\e[36mTelegram Group =\e[37m' https://t.me/BeritaaCryptooGroup
-echo -e '\e[36mTwitter =\e[37m' https://twitter.com/BeritaCryptoo
+echo -e '\e[35mProject =\e[40m' Testnet Paloma
+echo -e '\e[35mCommunity =\e[40m' BeritaCryptoo
+echo -e '\e[35mTelegram Channel =\e[40m' https://t.me/BeritaCryptoo
+echo -e '\e[35mTelegram Group =\e[40m' https://t.me/BeritaaCryptooGroup
+echo -e '\e[35mTwitter =\e[40m' https://twitter.com/BeritaCryptoo
 echo -e "\e[0m"
 
 echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+"
@@ -40,13 +40,12 @@ echo "export PALOMA_CHAIN_ID=paloma-testnet-13" >> $HOME/.bash_profile
 echo "export PALOMA_PORT=${PALOMA_PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
-
-echo '=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+='
+echo '=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+='
 echo -e "Your node name: \e[1m\e[32m$NODENAME\e[0m"
 echo -e "Your wallet name: \e[1m\e[32m$WALLET\e[0m"
-echo -e "Your chain id: \e[1m\e[32m$PALOMA_CHAIN_ID\e[0m"
+echo -e "Your chain name: \e[1m\e[32m$PALOMA_CHAIN_ID\e[0m"
 echo -e "Your port: \e[1m\e[32m$PALOMA_PORT\e[0m"
-echo '=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+='
+echo '=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+='
 sleep 2
 
 echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
