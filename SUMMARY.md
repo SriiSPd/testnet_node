@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Dashboard](README.md)
+* [Deinfra](deinfra.md)
 * [Haqq](Haqq/README.md)
 * [Hypersign](Hypersign/README.md)
 * [Inery](inery/README.md)
