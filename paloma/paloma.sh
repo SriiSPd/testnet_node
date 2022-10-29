@@ -2,22 +2,22 @@
 clear
 echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++"
 echo -e "\033[0;35m"
-echo " :;:;:;:;:; :;:;:;:;:;         :;:;      :;:     :;:;:     :;:;:;:;:;:    :;:;:;:;:; "; 
-echo " :+:     +: :+:                :+::+:    :+:   :+:   :+:   :+:       :+:  :+:        ";
-echo " +;+     :+ +;+                +;+ +;+   +;+ +;+      +;+  +;+        +;+ +;+        ";
-echo " +#:+#:+#:  +#:        #=#=#=# +#:  +#:  +#: +#:       +#: +#:        +#: +#:+#:+#:+ ";
-echo " #+#     +# #+#                #+#   #+# #+#  #+#     #+#  #+#       #+#  #+#        ";
-echo " +#+     #+ +#+                +#+    +#+#+    +#+   +#+   +#+      +#+   +#+        ";
-echo " #########  ##########         ###     ####      #####     ##########     ########## ";
+echo " :;:;:;:;:;  :;:;:;:;:;         :;:;      :;:     :;:;:     :;:;:;:;:;:   :;:;:;:;:; "; 
+echo " :+:      +: :+:                :+::+:    :+:   :+:   :+:   :+:       :+: :+:        ";
+echo " +;+     :+  +;+                +;+ +;+   +;+  +;+     +;+  +;+       +;+ +;+        ";
+echo " |+|+|+|+|   |+|       #1+1=3#  |+|  |+|  |+|  |+        +| |+|        +| |+|+|+|+|  ";
+echo " #+#     +#  #+#                #+#   #+# #+#  #+#     #+#  #+#       #+# #+#        ";
+echo " +#+     #+  +#+                +#+    +#+#+    +#+   +#+   +#+      +#+  +#+        ";
+echo " #########   ##########         ###     ####       ####     ##########    ########## ";
 echo -e "\e[0m"
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++" 
 
-echo -e '\e[33mGarapan :\e[35m' Register Deinfra Testnet
-echo -e '\e[33mAuthor :\e[35m' BeritaCryptoo
-echo -e '\e[33mTelegram Channel :\e[35m' https://t.me/BeritaCryptoo
-echo -e '\e[33mTelegram Group :\e[35m' https://t.me/BeritaaCryptooGroup
-echo -e '\e[33mTwitter :\e[35m' https://twitter.com/BeritaCryptoo
+echo -e '\e[32mProject =\e[35m' Testnet Paloma
+echo -e '\e[32mCommunity =\e[35m' BeritaCryptoo
+echo -e '\e[32mTelegram Channel =\e[35m' https://t.me/BeritaCryptoo
+echo -e '\e[32mTelegram Group =\e[35m' https://t.me/BeritaaCryptooGroup
+echo -e '\e[32mTwitter =\e[35m' https://twitter.com/BeritaCryptoo
 echo -e "\e[0m"
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++"
@@ -42,7 +42,7 @@ source $HOME/.bash_profile
 echo '================================================='
 echo -e "Your node name: \e[1m\e[32m$NODENAME\e[0m"
 echo -e "Your wallet name: \e[1m\e[32m$WALLET\e[0m"
-echo -e "Your chain name: \e[1m\e[32m$PALOMA_CHAIN_ID\e[0m"
+echo -e "Your chain id: \e[1m\e[32m$PALOMA_CHAIN_ID\e[0m"
 echo -e "Your port: \e[1m\e[32m$PALOMA_PORT\e[0m"
 echo '================================================='
 sleep 2
@@ -55,7 +55,7 @@ echo -e "\e[1m\e[32m2. Installing dependencies... \e[0m" && sleep 1
 # packages
 sudo apt install curl build-essential git wget jq make gcc tmux -y
 
-# install go
+# 🚥install go🚥
 if ! [ -x "$(command -v go)" ]; then
   ver="1.18.2"
   cd $HOME
@@ -68,7 +68,7 @@ if ! [ -x "$(command -v go)" ]; then
 fi
 
 echo -e "\e[1m\e[32m3. Downloading and building binaries... \e[0m" && sleep 1
-# download binary
+# download binary✍✍✍
 wget -O - https://github.com/palomachain/paloma/releases/download/v0.11.3/paloma_Linux_x86_64.tar.gz | \
 sudo tar -C /usr/local/bin -xvzf - palomad
 sudo chmod +x /usr/local/bin/palomad
