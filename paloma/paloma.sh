@@ -15,11 +15,11 @@ echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+"
 
 echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+"
 
-echo -e '\e[37mProject =\e[35m' Testnet Paloma
-echo -e '\e[37mCommunity =\e[35m' BeritaCryptoo
-echo -e '\e[37mTelegram Channel =\e[35m' https://t.me/BeritaCryptoo
-echo -e '\e[37mTelegram Group =\e[35m' https://t.me/BeritaaCryptooGroup
-echo -e '\e[37mTwitter =\e[35m' https://twitter.com/BeritaCryptoo
+echo -e '\e[36mProject =\e[37m' Testnet Paloma
+echo -e '\e[36mCommunity =\e[37m' BeritaCryptoo
+echo -e '\e[36mTelegram Channel =\e[37m' https://t.me/BeritaCryptoo
+echo -e '\e[36mTelegram Group =\e[37m' https://t.me/BeritaaCryptooGroup
+echo -e '\e[36mTwitter =\e[37m' https://twitter.com/BeritaCryptoo
 echo -e "\e[0m"
 
 echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+"
@@ -42,10 +42,10 @@ source $HOME/.bash_profile
 
 
 echo '=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+='
-echo -e "Your node name: \e[1m\e[30m$NODENAME\e[0m"
-echo -e "Your wallet name: \e[1m\e[30m$WALLET\e[0m"
-echo -e "Your chain id: \e[1m\e[30m$PALOMA_CHAIN_ID\e[0m"
-echo -e "Your port: \e[1m\e[30m$PALOMA_PORT\e[0m"
+echo -e "Your node name: \e[1m\e[32m$NODENAME\e[0m"
+echo -e "Your wallet name: \e[1m\e[32m$WALLET\e[0m"
+echo -e "Your chain id: \e[1m\e[32m$PALOMA_CHAIN_ID\e[0m"
+echo -e "Your port: \e[1m\e[32m$PALOMA_PORT\e[0m"
 echo '=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+='
 sleep 2
 
