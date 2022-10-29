@@ -41,10 +41,10 @@ echo "export PALOMA_PORT=${PALOMA_PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 echo '=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+='
-echo -e "Your node name: \e[1m\e[37m$NODENAME\e[0m"
-echo -e "Your wallet name: \e[1m\e[37m$WALLET\e[0m"
-echo -e "Your chain name: \e[1m\e[37m$PALOMA_CHAIN_ID\e[0m"
-echo -e "Your port: \e[1m\e[37m$PALOMA_PORT\e[0m"
+echo -e "Your node name: \e[1m\e[31m$NODENAME\e[0m"
+echo -e "Your wallet name: \e[1m\e[31m$WALLET\e[0m"
+echo -e "Your chain name: \e[1m\e[31m$PALOMA_CHAIN_ID\e[0m"
+echo -e "Your port: \e[1m\e[31m$PALOMA_PORT\e[0m"
 echo '=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+='
 sleep 2
 
