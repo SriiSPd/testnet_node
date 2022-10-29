@@ -1,26 +1,28 @@
 #!/bin/bash
 clear
-echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+"
 echo -e "\033[0;35m"
 echo " :;:;:;:;:;  :;:;:;:;:;         :;:;      :;:     :;:;:     :;:;:;:;:;:   :;:;:;:;:; "; 
 echo " :+:      +: :+:                :+::+:    :+:   :+:   :+:   :+:       :+: :+:        ";
 echo " +;+     :+  +;+                +;+ +;+   +;+  +;+     +;+  +;+       +;+ +;+        ";
-echo " |+|+|+|+|   |+|       #1+1=3#  |+|  |+|  |+|  |+        +| |+|        +| |+|+|+|+|  ";
+echo " |+|+|+|+|   |+|       #1+1=3#  |+|  |+|  |+|  |+       +|  |+|        +| |+|+|+|+|  ";
 echo " #+#     +#  #+#                #+#   #+# #+#  #+#     #+#  #+#       #+# #+#        ";
 echo " +#+     #+  +#+                +#+    +#+#+    +#+   +#+   +#+      +#+  +#+        ";
 echo " #########   ##########         ###     ####       ####     ##########    ########## ";
 echo -e "\e[0m"
 
-echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++" 
+echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" 
 
-echo -e '\e[32mProject =\e[35m' Testnet Paloma
-echo -e '\e[32mCommunity =\e[35m' BeritaCryptoo
-echo -e '\e[32mTelegram Channel =\e[35m' https://t.me/BeritaCryptoo
-echo -e '\e[32mTelegram Group =\e[35m' https://t.me/BeritaaCryptooGroup
-echo -e '\e[32mTwitter =\e[35m' https://twitter.com/BeritaCryptoo
+echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+"
+
+echo -e '\e[37mProject =\e[35m' Testnet Paloma
+echo -e '\e[37mCommunity =\e[35m' BeritaCryptoo
+echo -e '\e[37mTelegram Channel =\e[35m' https://t.me/BeritaCryptoo
+echo -e '\e[37mTelegram Group =\e[35m' https://t.me/BeritaaCryptooGroup
+echo -e '\e[37mTwitter =\e[35m' https://twitter.com/BeritaCryptoo
 echo -e "\e[0m"
 
-echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+"
 
 
 sleep 2
@@ -39,12 +41,12 @@ echo "export PALOMA_PORT=${PALOMA_PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 
-echo '================================================='
-echo -e "Your node name: \e[1m\e[32m$NODENAME\e[0m"
-echo -e "Your wallet name: \e[1m\e[32m$WALLET\e[0m"
-echo -e "Your chain id: \e[1m\e[32m$PALOMA_CHAIN_ID\e[0m"
-echo -e "Your port: \e[1m\e[32m$PALOMA_PORT\e[0m"
-echo '================================================='
+echo '=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+='
+echo -e "Your node name: \e[1m\e[30m$NODENAME\e[0m"
+echo -e "Your wallet name: \e[1m\e[30m$WALLET\e[0m"
+echo -e "Your chain id: \e[1m\e[30m$PALOMA_CHAIN_ID\e[0m"
+echo -e "Your port: \e[1m\e[30m$PALOMA_PORT\e[0m"
+echo '=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+='
 sleep 2
 
 echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
